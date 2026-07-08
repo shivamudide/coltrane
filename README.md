@@ -4,6 +4,17 @@
 singles and songs, rate and review them, keep a Listen Later queue, like things, and
 build ranked lists — all on a profile that shows who you are through what you listen to.
 
+<p align="center">
+  <img src="docs/screenshots/home.png" alt="Coltrane home page with hero, album grid, and navigation" width="920" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/release.png" alt="Coltrane release page" width="440" />
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/profile.png" alt="Coltrane profile" width="440" />
+</p>
+<p align="center"><sub><strong>Release page</strong> · log, rate, preview tracks &nbsp;|&nbsp; <strong>Profile</strong> · your shelf, diary, and activity</sub></p>
+
 ## Features
 
 - **Log listens** — the `+ Log` button (or any cover's hover actions) opens a diary
