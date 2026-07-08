@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #faf7f2;
+  --color-card: #ffffff;
+  --color-ink: #1a1410;
+  --color-muted: #6b5d4f;
+  --color-line: #e9e1d6;
+  --color-soft: #f3ede4;
+  --color-brown: #3d2e22;
+  --color-brown-dark: #2d2118;
+  --color-green: #0f9d47;
+  --color-green-dark: #0b7c38;
+  --color-orange: #ef7c12;
+  --color-blue: #3ba3d4;
+  --color-fail: #cf222e;
+
+  --font-sans: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+::selection {
+  background: rgba(15, 157, 71, 0.16);
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: #8a7868;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(15, 157, 71, 0.55);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* letterboxd-style micro section label */
+.micro {
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-muted;
+}
+
+/* pill buttons — loferret language */
+.btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-1.5 rounded-full border border-brown bg-brown px-4 py-1.5 text-[0.86rem] font-semibold text-white transition-colors;
+}
+.btn:hover {
+  @apply border-brown-dark bg-brown-dark;
+}
+.btn-green {
+  @apply border-green bg-green;
+}
+.btn-green:hover {
+  @apply border-green-dark bg-green-dark;
+}
+.btn-ghost {
+  @apply border-line bg-card text-ink;
+}
+.btn-ghost:hover {
+  @apply border-[#c9b8a4] bg-card;
+}
+.btn-sm {
+  @apply px-3 py-1 text-[0.78rem];
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full border border-line bg-soft px-2 py-px font-mono text-[0.66rem] font-semibold uppercase tracking-wide text-muted;
+}
+
+.field {
+  @apply w-full rounded-[10px] border border-line bg-card px-3 py-2 text-sm;
+}
